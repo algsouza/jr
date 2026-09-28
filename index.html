@@ -4,290 +4,431 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>JR Group LLC | Home Services & Handyman</title>
+    <title>JR Service Group LLC | Professional Home Services & Handyman in Orlando</title>
     <meta
         name="description"
-        content="JR Group LLC provides professional home services and handyman solutions in Orlando and surrounding areas."
+        content="JR Service Group LLC delivers professional home services and handyman solutions in Orlando and surrounding areas — cleaning, painting, repairs, HVAC, electrical, plumbing and more."
     >
+    <meta name="theme-color" content="#071d3a">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JR Service Group LLC | Professional Home Services & Handyman">
+    <meta property="og:description" content="Professional home services built around quality and trust. Serving Orlando and surrounding areas.">
+    <meta property="og:image" content="assets/logo/jr-logo-blue.png">
+    <meta property="og:url" content="https://jrgroupservicellc.com">
+
+    <link rel="icon" href="assets/logo/jr-logo-blue.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
     <!-- HEADER -->
-   <header class="site-header">
-    <div class="container">
+    <header class="site-header">
+        <div class="container">
 
-        <a href="#home" class="header-logo">
-            <img
-                src="assets/logo/jr-logo-blue.png"
-                alt="JR Group LLC"
-            >
-        </a>
+            <a href="#home" class="header-logo">
+                <img
+                    src="assets/logo/jr-logo-blue.png"
+                    alt="JR Service Group LLC"
+                    width="46"
+                    height="46"
+                >
+                <span class="header-logo-text">
+                    JR SERVICE<br>GROUP LLC
+                </span>
+            </a>
 
-        <nav class="main-nav">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About Us</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <nav class="main-nav" id="main-nav">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#gallery">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-primary header-button">Get a Free Estimate</a>
+            </nav>
 
-        <a href="#contact" class="header-button">
-            Get a Free Estimate
-        </a>
+            <div class="header-actions">
+                <button
+                    class="nav-toggle"
+                    id="nav-toggle"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded="false"
+                    aria-controls="main-nav"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
-    </div>
-</header>
+        </div>
+    </header>
 
 
-    <!-- HERO -->
-    <main>
+    <main id="main-content">
 
+        <!-- HERO -->
         <section id="home" class="hero">
+
+            <!--
+                Cinematic hero video: "From Detail to Home" — generated via Higgsfield
+                (Kling v3.0, pro mode). See docs/hero-video-brief.md for the creative
+                concept and prompt history. video.js only reveals this element once a
+                frame actually loads and the user has not requested reduced motion —
+                until then, the poster/gradient below is the full visual and nothing
+                is broken.
+            -->
+            <video
+                class="hero-video"
+                id="hero-video"
+                poster="assets/video/hero-poster.jpg"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="none"
+                aria-hidden="true"
+            >
+                <source src="assets/video/hero-home-services.mp4" type="video/mp4">
+            </video>
 
             <div class="container hero-content">
 
-                <div class="hero-text">
+                <div class="hero-signature">
+                    <img
+                        src="assets/logo/jr-logo-white.png"
+                        alt=""
+                        class="hero-mark"
+                        width="84"
+                        height="84"
+                    >
+                    <p class="hero-brandline">JR Service Group LLC</p>
+                </div>
 
-                    <p class="eyebrow">
-                        HOME SERVICES & HANDYMAN
+                <p class="eyebrow">Home Services &amp; Handyman</p>
+
+                <h1>
+                    Professional Home Services<br>
+                    Built Around <em>Quality</em> &amp; Trust.
+                </h1>
+
+                <p class="hero-description">
+                    From everyday repairs to complete property maintenance, JR Service Group LLC
+                    brings organized, reliable and professional care to every home we work in.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+                    <a href="#services" class="btn btn-outline-light">Explore Our Services</a>
+                </div>
+
+                <div class="hero-trustbar">
+                    <span>Licensed Home Services Provider</span>
+                    <span>Residential &amp; Commercial</span>
+                    <span>Serving Orlando &amp; Surrounding Areas</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section id="services" class="services-section">
+            <div class="container">
+
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">What We Do</p>
+                    <h2>Professional Services For Your Home</h2>
+                    <p>
+                        Eleven core services, one dependable team — from routine maintenance
+                        to the projects that need a true handyman's range of skill.
                     </p>
+                </div>
 
-                    <h1>
-                        Reliable Service.<br>
-                        Quality You Can Trust.
-                    </h1>
+                <div class="services-grid">
 
-                    <p class="hero-description">
-                        Professional home services and handyman solutions
-                        for residential and commercial properties.
-                    </p>
+                    <article class="service-card service-card--md service-card--has-image" data-reveal>
+                        <div class="service-card-media">
+                            <img src="assets/images/services/painting.jpg" alt="" loading="lazy" width="1168" height="880">
+                        </div>
+                        <span class="service-number">02</span>
+                        <h3>Painting</h3>
+                        <p>Interior and exterior painting with attention to detail and quality finishes.</p>
+                    </article>
 
-                    <div class="hero-buttons">
-                        <a href="#contact" class="primary-button">
-                            Get a Free Estimate
-                        </a>
+                    <article class="service-card service-card--sm" data-reveal>
+                        <div class="service-card-media"></div>
+                        <span class="service-number">01</span>
+                        <h3>General Cleaning</h3>
+                        <p>Professional cleaning solutions for residential and commercial properties.</p>
+                    </article>
 
-                        <a href="#services" class="secondary-button">
-                            Explore Services
-                        </a>
+                    <article class="service-card service-card--hero service-card--has-image" data-reveal>
+                        <div class="service-card-media">
+                            <img src="assets/images/services/handyman.jpg" alt="" loading="lazy" width="1168" height="880">
+                        </div>
+                        <span class="service-number">11</span>
+                        <h3>Handyman</h3>
+                        <p>The full range — practical, versatile solutions for repairs, maintenance and improvement projects of every size.</p>
+                    </article>
+
+                    <article class="service-card service-card--sm" data-reveal>
+                        <div class="service-card-media"></div>
+                        <span class="service-number">03</span>
+                        <h3>Minor Repairs</h3>
+                        <p>Reliable solutions for everyday home repairs and property improvements.</p>
+                    </article>
+
+                    <article class="service-card service-card--sm service-card--has-image" data-reveal>
+                        <div class="service-card-media">
+                            <img src="assets/images/services/hvac.jpg" alt="" loading="lazy" width="1168" height="880">
+                        </div>
+                        <span class="service-number">04</span>
+                        <h3>Air Conditioning</h3>
+                        <p>Air conditioning service and maintenance to keep your property comfortable.</p>
+                    </article>
+
+                    <article class="service-card service-card--sm" data-reveal>
+                        <div class="service-card-media"></div>
+                        <span class="service-number">05</span>
+                        <h3>Duct Cleaning</h3>
+                        <p>Professional duct cleaning to help maintain cleaner, healthier indoor air.</p>
+                    </article>
+
+                    <article class="service-card service-card--sm" data-reveal>
+                        <div class="service-card-media"></div>
+                        <span class="service-number">06</span>
+                        <h3>Dryer Vent Cleaning</h3>
+                        <p>Dryer vent cleaning to improve airflow, efficiency and safety.</p>
+                    </article>
+
+                    <article class="service-card service-card--sm service-card--has-image" data-reveal>
+                        <div class="service-card-media">
+                            <img src="assets/images/services/landscaping.jpg" alt="" loading="lazy" width="1168" height="880">
+                        </div>
+                        <span class="service-number">08</span>
+                        <h3>Landscaping</h3>
+                        <p>Outdoor property care and landscaping solutions designed around your needs.</p>
+                    </article>
+
+                    <article class="service-card service-card--sm" data-reveal>
+                        <div class="service-card-media"></div>
+                        <span class="service-number">07</span>
+                        <h3>Lawn Care</h3>
+                        <p>Routine lawn care and maintenance to keep your property looking its best.</p>
+                    </article>
+
+                    <article class="service-card service-card--md service-card--has-image" data-reveal>
+                        <div class="service-card-media">
+                            <img src="assets/images/services/electrical.jpg" alt="" loading="lazy" width="1168" height="880">
+                        </div>
+                        <span class="service-number">09</span>
+                        <h3>Electrical</h3>
+                        <p>Electrical installation, repairs and maintenance for your property.</p>
+                    </article>
+
+                    <article class="service-card service-card--md service-card--has-image" data-reveal>
+                        <div class="service-card-media">
+                            <img src="assets/images/services/plumbing.jpg" alt="" loading="lazy" width="1168" height="880">
+                        </div>
+                        <span class="service-number">10</span>
+                        <h3>Plumbing</h3>
+                        <p>Plumbing installation, repairs and maintenance for residential and commercial properties.</p>
+                    </article>
+
+                </div>
+
+                <p class="services-note">
+                    Editorial imagery shown for illustrative purposes. Real project photography will replace it in the Projects section as jobs are completed.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="about-section">
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div data-reveal>
+                        <p class="eyebrow">Why JR Group</p>
+                        <h2 style="color: var(--white); font-size: clamp(32px, 4.2vw, 46px); letter-spacing: -1px; line-height: 1.1; margin-bottom: 22px;">
+                            Quality. Trust.<br>Commitment.
+                        </h2>
+                        <p class="about-lede">
+                            We believe every project deserves professional service, honest
+                            communication and quality workmanship — treating every property
+                            with the same care we'd want for our own.
+                        </p>
+                        <p class="about-note">
+                            Company history, credentials and service-area details to be added here.
+                        </p>
+                    </div>
+
+                    <div class="about-pillars" data-reveal>
+
+                        <div class="about-pillar">
+                            <h3>Professional</h3>
+                            <p>Organized scheduling, clear communication and a team that shows up prepared.</p>
+                        </div>
+
+                        <div class="about-pillar">
+                            <h3>Reliable</h3>
+                            <p>Punctual service you can plan around, from the first call to the final walkthrough.</p>
+                        </div>
+
+                        <div class="about-pillar">
+                            <h3>Quality</h3>
+                            <p>Careful workmanship and attention to detail on every job, large or small.</p>
+                        </div>
+
+                        <div class="about-pillar">
+                            <h3>Trust</h3>
+                            <p>Straightforward pricing and honest guidance so you always know what to expect.</p>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <div class="hero-logo">
-    <img
-        src="assets/logo/jr-logo-service.png"
-        alt="JR Group LLC - Home Services & Handyman"
-    >
-</div>
+            </div>
+        </section>
 
+
+        <!-- PROJECTS / GALLERY -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Our Work</p>
+                    <h2>Recent Projects</h2>
+                    <p>A look at the properties we've helped maintain and improve. Photos coming soon.</p>
+                </div>
+
+                <div class="gallery-grid" data-reveal>
+                    <div class="gallery-item gallery-item--a"><span>Project Photo</span></div>
+                    <div class="gallery-item gallery-item--b"><span>Project Photo</span></div>
+                    <div class="gallery-item gallery-item--c"><span>Project Photo</span></div>
+                    <div class="gallery-item gallery-item--d"><span>Project Photo</span></div>
+                    <div class="gallery-item gallery-item--e"><span>Project Photo</span></div>
+                </div>
+
+                <p class="gallery-note">Real project photography will be added here as jobs are completed.</p>
+
+            </div>
+        </section>
+
+
+        <!-- CTA BAND -->
+        <section class="cta-band">
+            <div class="container">
+
+                <div class="cta-copy">
+                    <h2>Ready to take care of your home?</h2>
+                    <p>Let's talk about your next project — from a single repair to full property maintenance.</p>
+                </div>
+
+                <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Let's Get Started</p>
+                    <h2>Request a Free Estimate</h2>
+                    <p>Tell us about your property and the service you need — we'll follow up to schedule your estimate.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div data-reveal>
+                        <div class="contact-info-list">
+
+                            <div class="contact-info-item">
+                                <h3>Phone</h3>
+                                <a href="tel:+14079894985">(407) 989-4985</a>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <h3>Email</h3>
+                                <p>[Email address to be added]</p>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <h3>Service Area</h3>
+                                <p>Orlando &amp; Surrounding Areas</p>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <h3>Business Hours</h3>
+                                <p>[Business hours to be added]</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <form class="contact-form" data-reveal>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="" selected disabled>Select a service</option>
+                                <option>General Cleaning</option>
+                                <option>Painting</option>
+                                <option>Minor Repairs</option>
+                                <option>Air Conditioning</option>
+                                <option>Duct Cleaning</option>
+                                <option>Dryer Vent Cleaning</option>
+                                <option>Lawn Care</option>
+                                <option>Landscaping</option>
+                                <option>Electrical</option>
+                                <option>Plumbing</option>
+                                <option>Handyman</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us a bit about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Request a Free Estimate</button>
+
+                        <p class="form-note">We'll get back to you as soon as possible.</p>
+
+                    </form>
 
                 </div>
 
             </div>
-
-        </section>
-
-
-        <!-- SERVICES PREVIEW -->
-       <!-- SERVICES -->
-<section id="services" class="services-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <p class="eyebrow">WHAT WE DO</p>
-
-            <h2>
-                Professional Services
-                <br>
-                For Your Home
-            </h2>
-
-            <p>
-                From repairs and maintenance to complete home services,
-                JR Group LLC is ready to help.
-            </p>
-        </div>
-
-
-        <div class="services-grid">
-
-            <article class="service-card">
-                <div class="service-icon">01</div>
-                <h3>General Cleaning</h3>
-                <p>
-                    Professional cleaning solutions for residential
-                    and commercial properties.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">02</div>
-                <h3>Painting</h3>
-                <p>
-                    Interior and exterior painting with attention
-                    to detail and quality finishes.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">03</div>
-                <h3>Minor Repairs</h3>
-                <p>
-                    Reliable solutions for everyday home repairs
-                    and property improvements.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">04</div>
-                <h3>Air Conditioning</h3>
-                <p>
-                    Air conditioning service and maintenance
-                    to keep your property comfortable.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">05</div>
-                <h3>Duct Cleaning</h3>
-                <p>
-                    Professional duct cleaning to help maintain
-                    cleaner and healthier indoor air.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">06</div>
-                <h3>Dryer Vent Cleaning</h3>
-                <p>
-                    Dryer vent cleaning to improve airflow,
-                    efficiency and safety.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">07</div>
-                <h3>Lawn Care</h3>
-                <p>
-                    Routine lawn care and maintenance to keep
-                    your property looking its best.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">08</div>
-                <h3>Landscaping</h3>
-                <p>
-                    Outdoor property care and landscaping solutions
-                    designed around your needs.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">09</div>
-                <h3>Electrical</h3>
-                <p>
-                    Electrical installation, repairs and
-                    maintenance for your property.
-                </p>
-            </article>
-
-
-            <article class="service-card">
-                <div class="service-icon">10</div>
-                <h3>Plumbing</h3>
-                <p>
-                    Plumbing installation, repairs and maintenance
-                    for residential and commercial properties.
-                </p>
-            </article>
-
-
-            <article class="service-card service-card-featured">
-                <div class="service-icon">11</div>
-                <h3>Handyman</h3>
-                <p>
-                    Practical solutions for home repairs,
-                    maintenance and improvement projects.
-                </p>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-        <!-- ABOUT PREVIEW -->
-        <section id="about" class="about-section">
-
-            <div class="container">
-
-                <p class="eyebrow">WHY JR GROUP</p>
-
-                <h2>
-                    Quality. Trust. Commitment.
-                </h2>
-
-                <p>
-                    We believe every project deserves professional service,
-                    honest communication and quality workmanship.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- GALLERY PLACEHOLDER -->
-        <section id="gallery" class="gallery-section">
-
-            <div class="container">
-
-                <p class="eyebrow">OUR WORK</p>
-
-                <h2>Recent Projects</h2>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT CTA -->
-        <section id="contact" class="contact-section">
-
-            <div class="container">
-
-                <p class="eyebrow">LET'S GET STARTED</p>
-
-                <h2>
-                    Need a Service?
-                </h2>
-
-                <p>
-                    Contact JR Group LLC today for a free estimate.
-                </p>
-
-                <a href="tel:+14079894985" class="primary-button">
-                    Call (407) 989-4985
-                </a>
-
-            </div>
-
         </section>
 
     </main>
@@ -295,20 +436,63 @@
 
     <!-- FOOTER -->
     <footer class="site-footer">
-
         <div class="container">
 
-            <p>
-                © 2026 JR Group LLC. All rights reserved.
-            </p>
+            <div class="footer-top">
 
-            <p>
-                Orlando & Surrounding Areas
-            </p>
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="assets/logo/jr-logo-white.png" alt="JR Service Group LLC" width="40" height="40">
+                        <span class="footer-brand-text">
+                            JR SERVICE GROUP LLC
+                            <span>Home Services &amp; Handyman</span>
+                        </span>
+                    </div>
+                    <p>Professional home services and handyman solutions for residential and commercial properties.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">General Cleaning</a></li>
+                        <li><a href="#services">Painting</a></li>
+                        <li><a href="#services">Electrical</a></li>
+                        <li><a href="#services">Plumbing</a></li>
+                        <li><a href="#services">Handyman</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+14079894985">(407) 989-4985</a></li>
+                        <li>Orlando &amp; Surrounding Areas</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 JR Service Group LLC. All rights reserved.</p>
+                <div class="footer-social" aria-label="Social media links">
+                    <!-- Social links to be added when provided -->
+                </div>
+            </div>
 
         </div>
-
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
